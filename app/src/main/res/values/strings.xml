@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UD_A1A_a15alejandroog</string>
+    <string name="btn_create_person">Create person</string>
+    <string name="btn_show_people">Show people</string>
+    <string name="et_name">Name</string>
+    <string name="et_description">Description</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_create">Create</string>
+</resources>

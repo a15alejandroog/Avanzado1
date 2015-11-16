@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btn_create_person" type="id">false</item>
+    <item name="btn_show_people" type="id">false</item>
+    <item name="et_name" type="id">false</item>
+    <item name="et_description" type="id">false</item>
+    <item name="btn_save" type="id">false</item>
+    <item name="btn_create" type="id">false</item>
+    <item name="spin_people" type="id">false</item>
+</resources>

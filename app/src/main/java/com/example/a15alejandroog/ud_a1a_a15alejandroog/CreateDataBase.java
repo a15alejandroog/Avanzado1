@@ -9,8 +9,11 @@ import android.database.sqlite.SQLiteOpenHelper;
  */
 public class CreateDataBase extends SQLiteOpenHelper {
 
-    public final static String DB_NAME = "database";
+    public final static String DB_NAME = "DATOS";
     public final static int DB_VERSION = 1;
+    private String CT_PERSOA = "CREATE TABLE persoa(" +
+            "nome VARCHAR(50) PRIMARY KEY," +
+            "descricion VARCHAR(150))";
 
     public CreateDataBase(Context context) {
         super(context, DB_NAME, null, DB_VERSION);

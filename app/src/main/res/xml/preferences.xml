@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/preferences">
+
+    <EditTextPreference
+        android:key="ID_PREF_DB"
+        android:title="@string/pref_title"
+        android:summary="@string/pref_summary"
+        android:defaultValue="@string/pref_default"
+        android:dialogTitle="@string/pref_dialog" />
+</PreferenceScreen>

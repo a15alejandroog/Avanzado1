@@ -1,9 +1,16 @@
 <resources>
-    <string name="app_name">UD_A1A_a15alejandroog</string>
+    <string name="app_name">Datos persistentes</string>
     <string name="btn_create_person">Create person</string>
     <string name="btn_show_people">Show people</string>
     <string name="et_name">Name</string>
     <string name="et_description">Description</string>
     <string name="btn_save">Save</string>
     <string name="btn_create">Create</string>
+
+
+    <string name="preferences">Preferences</string>
+    <string name="pref_title">DataBase Preferences</string>
+    <string name="pref_summary">Establish DataBase directory</string>
+    <string name="pref_default">/DATOS/</string>
+    <string name="pref_dialog">Establish directory</string>
 </resources>

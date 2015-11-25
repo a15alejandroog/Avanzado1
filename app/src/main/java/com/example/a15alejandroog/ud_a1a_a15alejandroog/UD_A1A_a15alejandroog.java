@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import java.io.File;
 
@@ -39,6 +40,8 @@ public class UD_A1A_a15alejandroog extends AppCompatActivity {
                     switch (which) {
                         case 0:
                             dataBase = new CreateDataBase(getApplicationContext());
+                            dataBase.getWritableDatabase();
+                            Toast.makeText(getApplicationContext(), getString(R.string.created), Toast.LENGTH_SHORT).show();
                             break;
                         case 1:
                             
@@ -49,8 +52,6 @@ public class UD_A1A_a15alejandroog extends AppCompatActivity {
             alert.show();
 
         }
-        dataBase = new CreateDataBase(getApplicationContext());
-        Log.i("DB", "Created data base");
 
         btn_create = (Button) findViewById(R.id.btn_create_person);
         btn_show = (Button) findViewById(R.id.btn_show_people);

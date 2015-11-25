@@ -13,4 +13,11 @@
     <string name="pref_summary">Establish DataBase directory</string>
     <string name="pref_default">/DATOS/</string>
     <string name="pref_dialog">Establish directory</string>
+
+
+    <string name="dialog_title">Choose an option</string>
+    <string-array name="choices">
+        <item>Create through script</item>
+        <item>Import from existing file</item>
+    </string-array>
 </resources>

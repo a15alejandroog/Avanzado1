@@ -17,6 +17,14 @@
 
     </Spinner>
 
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/et_description"/>
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@id/tv_description"/>
     <Button
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"

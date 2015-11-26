@@ -21,6 +21,8 @@ public class UD_A1A_a15alejandroog extends AppCompatActivity {
     Button btn_show;
     String dataBasePath;
     Button btn_create;
+    final int ACT_SHOW = 32;
+    final int ACT_CREATE = 30;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +35,7 @@ public class UD_A1A_a15alejandroog extends AppCompatActivity {
         if (!dBase.exists()) {
             alert = new AlertDialog.Builder(this);
             alert.setIcon(android.R.drawable.ic_dialog_alert);
-            alert.setTitle((CharSequence) getString(R.string.dialog_title));
+            alert.setTitle(getString(R.string.dialog_title));
             alert.setItems(R.array.choices, new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {

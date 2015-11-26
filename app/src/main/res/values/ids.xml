@@ -8,4 +8,5 @@
     <item name="btn_create" type="id">false</item>
     <item name="spin_people" type="id">false</item>
     <item name="action_settings" type="id">false</item>
+    <item name="tv_description" type="id">false</item>
 </resources>

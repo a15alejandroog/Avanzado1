@@ -47,7 +47,7 @@ public class show_people extends AppCompatActivity {
                 }
             });
         } else {
-            textView.setText("No people to show");
+            textView.setText(getString(R.string.no_people));
         }
     }
 }

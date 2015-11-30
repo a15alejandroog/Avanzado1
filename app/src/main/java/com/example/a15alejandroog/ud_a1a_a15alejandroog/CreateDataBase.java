@@ -48,7 +48,6 @@ public class CreateDataBase extends SQLiteOpenHelper {
         Persoa persoa = null;
         database = getReadableDatabase();//Open database connection (read mode)
         Cursor datosConsulta = database.rawQuery(SELECT_PERSOA, new String[] {String.valueOf(nome)});
-        database.close();//Close connection
 
         //Create object
         if (datosConsulta.moveToFirst()) {
@@ -57,6 +56,7 @@ public class CreateDataBase extends SQLiteOpenHelper {
                 datosConsulta.moveToNext();
             }
         }
+        database.close();
         return persoa;
     }
 
@@ -68,7 +68,6 @@ public class CreateDataBase extends SQLiteOpenHelper {
         ArrayList<Persoa> listPeople = new ArrayList<>();
         database = getReadableDatabase();//Open database connection (read mode)
         Cursor consult = database.rawQuery("SELECT * FROM persoa", null);
-        database.close();//Close connection
 
         //Create object and add them to the ArrayList
         if (consult.moveToFirst()) {
@@ -79,6 +78,7 @@ public class CreateDataBase extends SQLiteOpenHelper {
                 consult.moveToNext();
             }
         }
+        database.close();//Close connection
         return listPeople;
     }
 

@@ -46,7 +46,8 @@ public class UD_A1A_a15alejandroog extends AppCompatActivity {
                             Toast.makeText(getApplicationContext(), getString(R.string.created), Toast.LENGTH_SHORT).show();
                             break;
                         case 1:
-                            
+                            copyDB();
+                            Toast.makeText(getApplicationContext(), getString(R.string.copied), Toast.LENGTH_SHORT).show();
                             break;
                     }
                 }

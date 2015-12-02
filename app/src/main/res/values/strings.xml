@@ -14,6 +14,7 @@
     <string name="pref_default">/DATOS/</string>
     <string name="pref_dialog">Establish directory</string>
     <string name="no_people">No people to be shown</string>
+    <string name="no_data">You must insert a name and a description</string>
     <string name="created">Database has been created</string>
     <string name="copied">Database has been imported</string>
 

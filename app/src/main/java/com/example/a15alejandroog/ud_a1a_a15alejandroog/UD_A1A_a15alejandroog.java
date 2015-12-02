@@ -13,6 +13,10 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 
 public class UD_A1A_a15alejandroog extends AppCompatActivity {
 
@@ -77,7 +81,31 @@ public class UD_A1A_a15alejandroog extends AppCompatActivity {
     }
 
     private void copyDB(){
+        String pathbd = "/data/data/" + getPackageName() + "/databases/";
+        File filepathdb = new File(pathbd);
+        filepathdb.mkdirs();
 
+        String bddestino = "/data/data/" + getPackageName() + "/databases/" + CreateDataBase.DB_NAME;
+
+        InputStream inputstream;
+        try {
+            inputstream = getAssets().open(CreateDataBase.DB_NAME);
+            OutputStream outputstream = new FileOutputStream(bddestino);
+
+            int tamread;
+            byte[] buffer = new byte[2048];
+
+            while ((tamread = inputstream.read(buffer)) > 0) {
+                outputstream.write(buffer, 0, tamread);
+            }
+
+            inputstream.close();
+            outputstream.flush();
+            outputstream.close();
+        } catch (IOException ex) {
+            // TODO Auto-generated catch block
+            ex.printStackTrace();
+        }
     }
 
     @Override

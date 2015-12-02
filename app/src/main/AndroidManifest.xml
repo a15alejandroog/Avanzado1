@@ -21,6 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".create_person"></activity>
+        <activity android:name=".Preferences"></activity>
         <activity android:name=".show_people"></activity>
     </application>
 

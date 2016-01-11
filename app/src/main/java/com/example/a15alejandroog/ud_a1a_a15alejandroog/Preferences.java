@@ -1,16 +1,23 @@
 package com.example.a15alejandroog.ud_a1a_a15alejandroog;
 
+import android.content.Intent;
+import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.widget.TextView;
+import android.widget.Toast;
 
 /**
  * Created by a15alejandroog on 11/16/15.
  */
 public class Preferences extends AppCompatActivity {
 
-    final public String PREFERENCES_FILE = "pref";
-    final public String DATA_NAME = "file";
 
     public static class SettingsFragment extends PreferenceFragment {
         @Override

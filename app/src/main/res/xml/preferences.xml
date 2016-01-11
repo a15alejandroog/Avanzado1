@@ -8,4 +8,5 @@
         android:summary="@string/pref_summary"
         android:defaultValue="@string/pref_default"
         android:dialogTitle="@string/pref_dialog" />
+
 </PreferenceScreen>
